@@ -1,0 +1,442 @@
+<html>
+
+<head>
+
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
+
+
+<!-- google fonts railway -->
+<link href='https://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+
+
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <title></title>
+
+<script type="text/javascript">
+window.onload=function(){
+
+var x;
+var y;
+$('article').each(function(index) {
+  $(this).click(function() {
+    $(this).addClass('selected');
+    x = $(this).offset().left+55;
+    y = $(this).offset().top-60;  
+    
+    
+  })
+});
+
+$('img').each(function(index) {
+  var xi = $(this).offset().left;
+  var yi = $(this).offset().top;
+  $(this).css('left', xi).css('top', yi);
+  $(this).click(function() {
+    $(this).animate({
+      left: x,
+      top: y
+    })
+  })
+});
+
+}
+</script>
+
+
+<style>
+  h5{
+      color: white;
+  text-align: center;
+ 
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  border-radius: 4px;
+  font-size: 22px;
+  font-weight: 700;
+  }
+
+  /* affter img effect */
+  img::after { 
+    content: "Testing";
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+    z-index: 9999;
+}
+
+  img:hover{
+     transform: scale(0.8);
+    transition: 0.2s;
+
+  }
+
+  article{
+    margin-top:10px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    height:80px;
+    background-color: white;
+
+  }
+
+  article:hover{
+    transform: scale(1.05);
+    transition: 1s;
+    background-color: rgba(255, 255, 255, 0.4) ;
+  }
+
+.img-box{
+  background-color:rgba(255, 255, 255, 0.7);
+  padding-left: 46px;
+  padding-top: 25px;
+  border-radius: 8px;
+  border-left: 1px solid rgb(148, 148, 148);
+}
+
+
+
+.img-box2{
+  background-color:rgba(255, 255, 255, 0.7);
+  padding-left: 46px;
+  padding-top: 25px;
+  border-radius: 8px;
+  border-left: 1px solid rgb(148, 148, 148);
+}
+
+
+article.selected {
+  border: 2px solid rgb(2, 13, 63) !important;
+
+/* box shadow  */
+-webkit-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 4px 6px 5px 0px rgba(0,0,0,0.75);
+
+
+}
+  img{
+    height: 70px;
+    width: auto;
+  margin-top: 1 px;
+  position: absolute;
+  -webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -ms-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+  z-index: 9999;
+  }
+
+
+</style>
+  <script type="text/javascript">
+window.onload=function(){
+
+var x;
+var y;
+$('article').each(function(index) {
+  $(this).click(function() {
+    $(this).addClass('selected');
+    x = $(this).offset().left-535;
+    y = $(this).offset().top-75;  
+    
+  })
+});
+
+$('img.imgnew').each(function(index) {
+  var xi = $(this).offset().left;
+  var yi = $(this).offset().top;
+  // $(this).css('left', xi).css('top', yi);
+  $(this).click(function() {
+    $(this).animate({
+      left: x,
+      top: y
+    })
+  })
+});
+
+$('img.img-new').each(function(index) {
+  var xi = $(this).offset().left;
+  var yi = $(this).offset().top;
+  // $(this).css('left', xi).css('top', yi);
+  $(this).click(function() {
+    $(this).animate({
+      left: x + 180,
+      top: y 
+    })
+  })
+});
+
+
+}
+</script>
+
+ <script>
+  // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "None"
+    }], "*")
+  }
+</script>
+
+
+</head>
+
+<body style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+rgba(0,0,0,0.7) url('http://www.bu.edu/wll/files/2016/06/World-Map-Dark.jpg'); " >
+
+  <div class="container" >
+    <div class="col-md-12 col-lg-12">
+      <div class="row">
+        <div class="col-md-4 col-lg-4">
+          <h5>Countries</h5>
+        </div>
+
+        <div class="col-md-2 col-lg-2">
+          <h5>BLUE</h5>
+        </div>
+
+        <div class="col-md-2 col-lg-2">
+          <h5>RED</h5>
+        </div>
+
+        <div class="col-md-2 col-lg-2">
+          <h5>GREEN</h5>
+        </div>
+
+        <div class="col-md-2 col-lg-2">
+          <h5>YELLOW</h5>
+        </div>
+
+      </div>  
+    </div>
+
+
+    <div class="row">
+
+      <!-- image div start -->
+      <div class="col-md-2 col-lg-2 img-box ">
+        <div class="row"> 
+              <div class="row">
+                <div class="col-md-12 col-lg-12 text-center">
+                  <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Angola.png" class="img-new" alt="img1"/>
+                  <br/><br/><br/><br/>
+                  <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Brazil.png" class="img-new" alt="img1"/> 
+                  <br/><br/><br/><br/>
+                  <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Czech-Republic.png" class="respuesta" alt="img1"/>
+                  <br/><br/><br/><br/>
+                  <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Estonia.png" class="respuesta" alt="img1"/> 
+                  <br/><br/><br/><br/>
+                  <img src="http://stats.lk/Photos/Team/5351a2d5-00fe-4ad6-a42d-81e75c165585.jpg" class="respuesta" alt="img1"/>
+                  <br/><br/><br/><br/>
+                  <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-India.png" class="respuesta" alt="img1"/>
+                  <br/><br/><br/><br/>
+                  <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Kenya.png" class="respuesta" alt="img1"/> 
+                  <br/><br/><br/><br/>
+                  <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Kuwait.png" class="respuesta" alt="img1"/> 
+                  <br/><br/><br/><br/>
+                  <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-India.png" class="respuesta" alt="img1"/> 
+                  <br/><br/><br/><br/>
+                  <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-India.png" class="respuesta" alt="img1"/> 
+                  <br/><br/><br/><br/>
+                  <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-India.png" class="respuesta" alt="img1"/> 
+                  <br/><br/><br/><br/>
+                  <!-- <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Mexico.png" class="respuesta" alt="img1"/>   -->
+                </div>
+      
+                
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-2 col-lg-2 img-box2 "  >
+        <div class="row"> 
+              <div class="row">
+                <div class="col-md-12 col-lg-12 text-center">
+                  <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Angola.png" class="imgnew" alt="img1"/>
+                  <br/><br/><br/><br/>
+                  <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Brazil.png" class="imgnew" alt="img1"/> 
+                  <br/><br/><br/><br/>
+                  <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Czech-Republic.png" class="imgnew" alt="img1"/>
+                  <br/><br/><br/><br/>
+                  <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Estonia.png" class="respuesta imgnew" alt="img1"/> 
+                  <br/><br/><br/><br/>
+                  <img src="http://stats.lk/Photos/Team/5351a2d5-00fe-4ad6-a42d-81e75c165585.jpg" class="respuesta" alt="img1"/>
+                  <br/><br/><br/><br/>
+                  <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-India.png" class="respuesta" alt="img1"/>
+                  <br/><br/><br/><br/>
+                  <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Kenya.png" class="respuesta" alt="img1"/> 
+                  <br/><br/><br/><br/>
+                  <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Kuwait.png" class="respuesta" alt="img1"/> 
+                  <br/><br/><br/><br/>
+                  <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-India.png" class="respuesta" alt="img1"/> 
+                  <br/><br/><br/><br/>
+                  <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Mexico.png" class="respuesta" alt="img1"/>
+                  <br/><br/><br/><br/>
+                  <img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Mexico.png" class="respuesta" alt="img1"/>     
+                </div>
+      
+                
+          </div>
+        </div>
+      </div>
+
+
+      <!-- image div completed -->
+      <!-- green section start -->
+      <div class="col-md-2 col-lg-2 blue-bg">
+        <div class="row">
+          <div class="col-md-12 col-lg-12 ">
+            <article class="prega" style="border: 1px solid gray; height:80px" ></article>
+          </div>
+          <div class="col-md-12 col-lg-12">
+            <article class="prega" style="border: 1px solid gray; height:80px" ></article>
+          </div>
+          <div class="col-md-12 col-lg-12">
+            <article class="prega" style="border: 1px solid gray; height:80px" ></article>
+          </div>
+          <div class="col-md-12 col-lg-12">
+            <article class="prega" style="border: 1px solid gray; height:80px" ></article>
+          </div>
+          <div class="col-md-12 col-lg-12">
+            <article class="prega" style="border: 1px solid gray; height:80px" ></article>
+          </div>
+          <div class="col-md-12 col-lg-12">
+            <article class="prega" style="border: 1px solid gray; height:80px" ></article>
+          </div>
+
+        </div>
+      </div>
+<!-- green section end -->
+<!-- red section start -->
+<div class="col-md-2 col-lg-2">
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            <article class="prega"></article>
+          </div>
+          <div class="col-md-12 col-lg-12">
+            <article class="prega"  ></article>
+          </div>
+          <div class="col-md-12 col-lg-12">
+            <article class="prega"  ></article>
+          </div>
+          <div class="col-md-12 col-lg-12">
+            <article class="prega"  ></article>
+          </div>
+          <div class="col-md-12 col-lg-12">
+            <article class="prega"  ></article>
+          </div>
+          <div class="col-md-12 col-lg-12">
+            <article class="prega"  ></article>
+          </div>
+        
+        </div>
+      </div>
+
+      <!-- red section end -->
+
+      <!-- black section start -->
+      <div class="col-md-2 col-lg-2">
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            <article class="prega" style="border: 1px solid gray; height:80px" ></article>
+          </div>
+          <div class="col-md-12 col-lg-12">
+            <article class="prega" style="border: 1px solid gray; height:80px" ></article>
+          </div>
+          <div class="col-md-12 col-lg-12">
+            <article class="prega" style="border: 1px solid gray; height:80px" ></article>
+          </div>
+          <div class="col-md-12 col-lg-12">
+            <article class="prega" style="border: 1px solid gray; height:80px" ></article>
+          </div>
+          <div class="col-md-12 col-lg-12">
+            <article class="prega" style="border: 1px solid gray; height:80px" ></article>
+          </div>
+          <div class="col-md-12 col-lg-12">
+            <article class="prega" style="border: 1px solid gray; height:80px" ></article>
+          </div>
+        
+
+        </div>
+      </div>
+
+      <!-- black  section end -->
+
+      <!-- last section start -->
+
+       <div class="col-md-2 col-lg-2">
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            <article class="prega" style="border: 1px solid gray; height:80px" ></article>
+          </div>
+          <div class="col-md-12 col-lg-12">
+            <article class="prega" style="border: 1px solid gray; height:80px" ></article>
+          </div>
+          <div class="col-md-12 col-lg-12">
+            <article class="prega" style="border: 1px solid gray; height:80px" ></article>
+          </div>
+          <div class="col-md-12 col-lg-12">
+            <article class="prega" style="border: 1px solid gray; height:80px" ></article>
+          </div>
+          <div class="col-md-12 col-lg-12">
+            <article class="prega" style="border: 1px solid gray; height:80px" ></article>
+          </div>
+          <div class="col-md-12 col-lg-12">
+            <article class="prega" style="border: 1px solid gray; height:80px" ></article>
+          </div>
+         
+        </div>
+      </div>
+
+      <!-- last section end -->
+    
+
+
+    </div>
+  </div>
+  
+
+ 
+
+
+  
+  <script>
+  // tell the embed parent frame the height of the content
+  if (window.parent && window.parent.parent){
+    window.parent.parent.postMessage(["resultsFrame", {
+      height: document.body.getBoundingClientRect().height,
+      slug: "None"
+    }], "*")
+  }
+</script>
+
+
+
+
+
+</body></html>
